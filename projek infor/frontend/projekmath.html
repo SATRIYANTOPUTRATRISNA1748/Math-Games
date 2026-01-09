@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUAT KAMU</title>
+    <link rel="shortcut icon" href="valentine.png">
+    <link rel="stylesheet" href="projek.css">
+</head>
+<style>
+    .bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+}
+
+</style>
+<body>
+    <video class="bg-video" autoplay muted loop playsinline>
+        <source src="../vecteezy_dark-red-grunge-horror-background-loop_1806842.mp4" type="video/mp4">   
+    </video>
+
+    <audio class="audio" src="../gamelan.mp3" loop></audio>  
+    <div class="content">
+        <div class="card">
+            <h3>Ada sesuatu buat kamu</h3>
+            <img onclick="Mulai()" class="surat" src="../horor.png" alt="MAIL">
+            <p>Tekan Tombol Untuk Memulai</p>
+        </div>
+    </div>
+
+    <div class="content2" style="display:none">
+        <div class="paper">
+            <div class="paper-content">
+                <textarea class="pesan" disabled></textarea>
+            </div>
+        </div>
+        <div class="wa" style="display:none">
+            <button onclick="Beraksi()">Balas Pesan</button>
+        </div>
+    </div>
+
+    <script>
+        var ucapanSurat = `Peserta wajib mengerjakan ujian dalam mode layar penuh (Full Screen).
+
+Keluar dari layar penuh dianggap pelanggaran serius.
+
+Setiap soal memiliki batas waktu tertentu.
+
+Peserta hanya memiliki 3 kesempatan (❤️).
+
+Menyalin, membuka tab baru, atau keluar halaman dianggap mencontek.
+
+Jika salah lebih dari 3 kali, ujian akan dihentikan.`;
+    </script>
+
+    <script src="projek.js"></script>
+</body>
+</html>
